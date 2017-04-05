@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>H5单页面手势滑屏切换</title>
+<meta name="viewport" charset="utf-8" content="width=device-width,
+initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="container" class="banner">
+    <ul id="list" style="left: -600px;">
+        <li><img src="images/bg1.jpg"></li>
+        <li><img src="images/bg2.jpg"></li>
+        <li><img src="images/bg3.jpg"></li>
+        <li><img src="images/bg4.jpg"></li>
+        <li><img src="images/bg5.jpg"></li>
+    </ul>
+</div>
+
+<script src="lunbo.js"></script>
+<script>
+new lunbo('.banner',{
+    speeds: 30,
+    interval: 10
+});
+
+</script>
+</body>
+
+</html>
